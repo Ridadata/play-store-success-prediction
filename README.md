@@ -7,7 +7,7 @@ adoption, engagement, or editorial recognition — using only metadata
 available at (or near) release time: category, price, size, content
 rating, minimum Android version, and monetization model.
 
-[![CI](https://github.com/<user>/play-store-success-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/<user>/play-store-success-prediction/actions/workflows/ci.yml)
+[![CI](https://github.com/Ridadata/play-store-success-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/Ridadata/play-store-success-prediction/actions/workflows/ci.yml)
 
 ## Problem framing
 

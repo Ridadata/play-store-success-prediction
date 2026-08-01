@@ -38,5 +38,13 @@ target-version = "py310"
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.mypy]
-python_version = "3.10"
+# Pinned to 3.12, not the project's "3.10" floor: numpy's own .pyi stubs
+# use a PEP 695 `type X = ...` statement that mypy only accepts once its
+# target is >= 3.12, and that gate is purely mypy-config-driven, not tied
+# to whichever interpreter is actually running it (confirmed locally: the
+# same environment fails under `--python-version 3.10` and passes under
+# `--python-version 3.12`). Leaving this unset would still break CI's
+# Python-3.11 matrix leg, since mypy would then default to targeting 3.11.
+# The project's own code has no syntax that cares about this distinction.
+python_version = "3.12"
 ignore_missing_imports = true
