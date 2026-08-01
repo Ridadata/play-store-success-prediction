@@ -1,0 +1,39 @@
+# Data - never commit raw or intermediate datasets
+data/raw/*
+!data/raw/.gitkeep
+data/interim/
+data/processed/
+
+# Trained models, metrics, generated figures
+artifacts/*
+!artifacts/.gitkeep
+reports/figures/*
+!reports/figures/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ad hoc run logs
+*.log
