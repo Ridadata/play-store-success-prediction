@@ -9,6 +9,20 @@ description = "Predict whether a Google Play Store app will be a 'success' using
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.2,<3",
+    "numpy>=2.0,<3",
+    "scikit-learn>=1.5,<2",
+    "lightgbm>=4.5,<5",
+    "imbalanced-learn>=0.13,<1",
+    "matplotlib>=3.9,<4",
+    "seaborn>=0.13,<1",
+    "joblib>=1.4,<2",
+    "scipy>=1.13,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<9", "ruff>=0.6,<1", "mypy>=1.10,<2", "jupyter>=1.0,<2"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
